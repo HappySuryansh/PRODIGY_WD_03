@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f0036, #3a0ca3);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px #fff;
+}
+
+.mode-select button,
+.controls button,
+#name-input button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff007f;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff007f;
+}
+
+.mode-select button:hover,
+.controls button:hover {
+  background: #d9006e;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ffffff20;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+  transition: 0.3s;
+}
+
+.cell:hover {
+  background: #ffffff40;
+}
+
+.cell.win {
+  background: #4caf50 !important;
+  color: white;
+}
+
+#taunt {
+  margin: 15px;
+  font-style: italic;
+  color: #ffcb05;
+  text-shadow: 0 0 5px #000;
+}
+
+#player1,
+#player2 {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
